@@ -1,0 +1,58 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+    z-index: 1000; /* Ensure header is on top */
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  .course-detail {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .course-detail h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .course-info {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .course-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  .course-info p strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .daftar-button {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  

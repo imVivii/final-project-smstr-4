@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Detail Kursus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Detail Kursus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="course-detail">
+    <img src="assets/course-placeholder.png" alt="Course Image" class="course-image" />
+    <h2>Detail Kursus</h2>
+    <div class="course-info">
+      <p><strong>Nama Kursus</strong>: {{ kursus?.name }}</p>
+      <p><strong>Kategori Kursus</strong>: {{ kursus?.category }}</p>
+      <p><strong>Harga</strong>: {{ kursus?.price }}</p>
+      <p><strong>Media Kursus</strong>: {{ kursus?.media }}</p>
+      <p><strong>Guru</strong>: {{ kursus?.teacher }}</p>
+      <p><strong>Deskripsi</strong>: {{ kursus?.description }}</p>
+    </div>
+    <ion-button expand="block" color="primary" class="daftar-button" (click)="navigateToPendaftaran()">Daftar</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  .pembayaran-list {
+    padding: 20px;
+  }
+  
+  .pembayaran-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  ion-accordion-group {
+    // border: 2px solid #000;
+    // border-radius: 15px;
+    color: #000;
+  }
+  
+  ion-accordion ion-item {
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  ion-accordion div {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+  }
+  

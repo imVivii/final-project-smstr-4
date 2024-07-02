@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/logo.png" alt="Ensa Course Logo" height="30" />
+      Ensa Course
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" menuId="first" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button (click)="navigateToLogin()">
+        <ion-label>Login</ion-label>
+      </ion-item>
+      <ion-item button (click)="router.navigate(['/register'])">
+        <ion-label>Register</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content [fullscreen]="true" class="ion-padding" id="main-content">
+  <div class="welcome-card">
+    <h2>Selamat Datang</h2>
+    <h2>di</h2>
+    <h2>Ensa Course</h2>
+    <p>
+      Bergabunglah dengan kursus online kami dan mulai belajar hari ini. Belajar
+      dari instruktur terbaik di berbagai bidang. Apakah Anda ingin meningkatkan
+      keterampilan, mempelajari sesuatu yang baru, atau memajukan karier Anda,
+      kami memiliki kursus yang tepat untuk Anda.
+    </p>
+    <ion-button color="primary" (click)="navigateToLogin()">Mulai</ion-button>
+  </div>
+
+  <h3>Daftar Kursus</h3>
+  <div class="course-list">
+    <!-- <div class="course-card" *ngFor="let course of courses">
+      <img [src]="course.image" alt="{{course.name}}" />
+      <h4>{{course.name}}</h4>
+      <p>{{course.category}}</p>
+    </div> -->
+    @for (course of dataKategoriKursus; track $index) {
+    <div class="course-card">
+      <img [src]="course.gambar" alt="{{course.nama}}" />
+      <h4>{{course.nama}}</h4>
+      <p>{{course.kategori_kursus.nama}}</p>
+    </div>
+    }
+  </div>
+
+  <h3>Daftar Guru</h3>
+  <div class="teacher-list">
+    <!-- <div class="teacher-card" *ngFor="let teacher of teachers">
+      <img [src]="teacher.image" alt="{{teacher.name}}" />
+      <h4>{{teacher.name}}</h4>
+      <p>{{teacher.courses}}</p>
+    </div> -->
+    @for (teacher of dataGuru; track $index) {
+    <div class="teacher-card">
+      <img [src]="teacher.guru.foto_profil" alt="{{teacher.guru.nama}}" />
+      <h4>{{teacher.nama}}</h4>
+      <p>{{teacher.guru.nama}}</p>
+    </div>
+    }
+  </div>
+</ion-content>

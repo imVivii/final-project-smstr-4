@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Kursus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Kursus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="course-list">
+    <h2>DAFTAR KURSUS</h2>
+    <div class="course-item" *ngFor="let course of courses">
+      <img src="assets/icon-placeholder.png" alt="{{ course.name }}" class="course-icon" />
+      <div class="course-details">
+        <h3>{{ course.name }}</h3>
+        <ion-button color="primary" [routerLink]="['/home/lihat-kursus', course.id]">Lihat</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

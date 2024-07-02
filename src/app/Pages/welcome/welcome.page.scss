@@ -1,0 +1,61 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+  }
+  
+  .welcome-card {
+    /* Mengganti latar belakang gradien dengan gambar */
+    background-image: url('../../assets/bgku.jpg');
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-position: center; /* Memusatkan gambar */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h2 {
+    color: #000;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #000;
+    font-weight: bold;
+  }
+
+  p {
+    color: #000;
+  }
+  
+  .welcome-card h2 {
+    margin-top: 0;
+  }
+  
+  .course-list, .teacher-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .course-card, .teacher-card {
+    background: #00e5ff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .course-card img, .teacher-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pendaftaran</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pendaftaran</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="pendaftaran-list">
+    <h2>Daftar Pendaftaran</h2>
+    <ion-accordion-group>
+      <ion-accordion *ngFor="let item of pendaftaranList">
+        <ion-item slot="header" color="light">
+          <ion-label>{{ item.namaKursus }}</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <p><strong>Status Pendaftaran:</strong> {{ item.statusPendaftaran }}</p>
+          <p><strong>Status Kursus:</strong> {{ item.statusKursus }}</p>
+          <ng-container *ngIf="item.statusPendaftaran === 'menunggu pembayaran'">
+            <ion-button expand="block" color="primary" (click)="bayar(item)">Bayar</ion-button>
+          </ng-container>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+</ion-content>

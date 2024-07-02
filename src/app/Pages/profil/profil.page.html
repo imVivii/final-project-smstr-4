@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-card">
+    <img src="assets/logo.png" alt="User Image" class="profile-image" />
+    <h2>Profil</h2>
+    <ion-item>
+      <ion-label position="stacked">Nama :</ion-label>
+      <ion-text class="profile-text">John Doe</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email :</ion-label>
+      <ion-text class="profile-text">john.doe&#64;example.com</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Role :</ion-label>
+      <ion-text class="profile-text">Student</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Deskripsi :</ion-label>
+      <ion-text class="profile-text">Lorem ipsum dolor sit amet.</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nomor Handphone :</ion-label>
+      <ion-text class="profile-text">+1234567890</ion-text>
+    </ion-item>
+    <ion-button expand="block" color="primary" (click)="editProfile()">Edit</ion-button>
+  </div>
+</ion-content>
+

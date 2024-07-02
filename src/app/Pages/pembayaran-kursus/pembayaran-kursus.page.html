@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pembayaran Kursus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pembayaran Kursus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="payment-container">
+    <h2>Pembayaran Kursus</h2>
+
+    <div class="payment-methods">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Transfer Bank</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p><strong>BRI:</strong> 1234567890</p>
+          <p><strong>BNI:</strong> 0987654321</p>
+          <p><strong>BCA:</strong> 1122334455</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>E-Wallet</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p><strong>GoPay:</strong> 08123456789</p>
+          <p><strong>OVO:</strong> 0987654321</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <form (ngSubmit)="submitPayment()">
+      <ion-item>
+        <ion-label position="stacked">Nama Kursus</ion-label>
+        <ion-select [(ngModel)]="paymentForm.namaKursus" name="namaKursus" required>
+          <ion-select-option *ngFor="let course of courses" [value]="course">{{ course }}</ion-select-option>
+        </ion-select>
+      </ion-item><br>
+
+      <ion-item>
+        <ion-label position="stacked">Jumlah Pembayaran</ion-label>
+        <ion-input [(ngModel)]="paymentForm.jumlahPembayaran" name="jumlahPembayaran" required></ion-input>
+      </ion-item><br>
+
+      <ion-item>
+        <ion-label position="stacked">Bukti Pembayaran</ion-label>
+        <input type="file" (change)="onFileChange($event)" />
+      </ion-item><br>
+
+      <ion-button expand="block" type="submit" color="primary" class="submit-button">Kirim</ion-button>
+    </form>
+  </div>
+</ion-content>

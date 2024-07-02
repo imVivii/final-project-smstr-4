@@ -1,0 +1,50 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+  }
+  
+  .profile-card {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  ion-item {
+    --background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  ion-label {
+    color: #000;
+  }
+  
+  .profile-text {
+    color: #000;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+  

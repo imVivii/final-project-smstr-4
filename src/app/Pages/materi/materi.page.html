@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Materi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Materi</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="materi-container">
+    <h2>Daftar Materi</h2>
+    <ion-list>
+      <ion-item *ngFor="let item of materiList">
+        <ion-thumbnail slot="start">
+          <img src="assets/placeholder.png" />
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ item.namaKursus }}</h2>
+        </ion-label>
+        <ion-button fill="outline" slot="end" (click)="lihatMateri(item.id)">Lihat Materi</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

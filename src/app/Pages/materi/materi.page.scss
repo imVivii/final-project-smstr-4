@@ -1,0 +1,57 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  .materi-container {
+    padding: 20px;
+    background-color: #ffffff; /* Pastikan latar belakang kontainer berwarna putih */
+  }
+  
+  .materi-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; /* Menambahkan warna teks untuk judul */
+  }
+  
+  ion-list {
+    background-color: #ffffff; /* Pastikan latar belakang daftar berwarna putih */
+  }
+  
+  ion-item {
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    --background: #ffffff; /* Pastikan latar belakang item berwarna putih */
+    --inner-border-width: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-thumbnail img {
+    width: 60px; /* Sesuaikan dengan ukuran yang lebih kecil */
+    height: 60px;
+    border-radius: 10px;
+  }
+  
+  ion-label {
+    flex: 1;
+    margin-left: 10px;
+    color: #000; /* Menambahkan warna teks untuk label */
+  }
+  
+  ion-button {
+    --border-radius: 12px;
+    margin-left: auto;
+    --background: #0062db; /* Menggunakan warna biru */
+    color: #fff;
+  }
+  

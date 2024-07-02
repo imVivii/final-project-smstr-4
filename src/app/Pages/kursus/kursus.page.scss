@@ -1,0 +1,54 @@
+:host {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  ion-header {
+    --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    --color: #000;
+  }
+  
+  .course-list {
+    padding: 20px;
+  }
+  
+  .course-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .course-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .course-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .course-details h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  

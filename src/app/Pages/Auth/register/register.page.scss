@@ -1,0 +1,51 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+  
+  .logo {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  ion-item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  ion-button {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #3880ff;
+    text-decoration: none;
+  }
+
+  p {
+    color: black;
+  }
+  

@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="welcome-card">
+    <img src="assets/logo.png" alt="User Image" class="user-image" />
+    <div class="welcome-text">
+      <p>Selamat Datang,</p>
+      <p class="user-name">{{ infoUser?.name }}</p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <img src="assets/course-icon.png" alt="Course Icon" />
+      <p>Jumlah Kursus</p>
+      <h3>1</h3>
+    </div>
+    <div class="stat-card">
+      <img src="assets/task-icon.png" alt="Task Icon" />
+      <p>Jumlah Tugas</p>
+      <h3>1</h3>
+    </div>
+    <div class="stat-card">
+      <img src="assets/attendance-icon.png" alt="Attendance Icon" />
+      <p>Kehadiran Tersedia</p>
+      <h3>1</h3>
+    </div>
+  </div>
+
+  <div class="section">
+    <h4>Informasi Terbaru</h4>
+    <div class="info-item">
+      <p>informasi 1</p>
+      <a href="#">Lihat</a>
+    </div>
+    <div class="info-item">
+      <p>informasi 2</p>
+      <a href="#">Lihat</a>
+    </div>
+    <div class="info-item">
+      <p>informasi 3</p>
+      <a href="#">Lihat</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h4>Daftar Tugas Terbaru</h4>
+    <div class="task-item">
+      <p>Tugas 1</p>
+      <a href="#">Lihat</a>
+    </div>
+    <div class="task-item">
+      <p>Tugas 2</p>
+      <a href="#">Lihat</a>
+    </div>
+    <div class="task-item">
+      <p>Tugas 3</p>
+      <a href="#">Lihat</a>
+    </div>
+  </div>
+</ion-content>
+

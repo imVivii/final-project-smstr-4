@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Edit Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form (ngSubmit)="saveProfile()">
+    <div class="profile-card">
+      <img src="assets/logo.png" alt="User Image" class="profile-image" />
+      <h2>Edit Profil</h2>
+      <ion-item>
+        <ion-label position="stacked">Nama :</ion-label>
+        <ion-input [(ngModel)]="profile.name" name="name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email :</ion-label>
+        <ion-input [(ngModel)]="profile.email" name="email" type="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Role :</ion-label>
+        <ion-input [(ngModel)]="profile.role" name="role" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Deskripsi :</ion-label>
+        <ion-input [(ngModel)]="profile.description" name="description" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nomor Handphone :</ion-label>
+        <ion-input [(ngModel)]="profile.phone" name="phone" type="tel" required></ion-input>
+      </ion-item>
+      <ion-button expand="block" color="primary" type="submit">Simpan</ion-button>
+    </div>
+  </form>
+</ion-content>

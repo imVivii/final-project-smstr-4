@@ -1,0 +1,17 @@
+:host {
+  --ion-background-color: #ffffff;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+ion-header {
+  --background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  --color: #000;
+}
+
+#container {
+  text-align: center;
+  padding: 20px;
+}
